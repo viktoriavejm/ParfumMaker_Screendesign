@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParfumMaker</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="../Fotos/parfum.png">
+</head>
+<body>
+    <nav id="nav">
+        <div id="homepage_nav">
+            <h1>MixYourParfum</h1>
+            <h2 id="writeDate"></h2>
+        </div>
+    </nav>
+    
+    <main id="homepage_main">
+
+        <div id="homepage_main_status">
+            <div id="basenote">
+                <h4 class="state">Basenote</h4>
+            </div>
+
+            <div id="heartnote">
+                <h4 class="state">Heartnote</h4>
+            </div>
+
+            <div id="headnote">
+                <h4 class="state">Headnote</h4>
+            </div>
+
+            <div id="intensität">
+                <h4 class="state">Intensity</h4>
+            </div>
+        </div>
+
+        <div id="homepage_main_pic">
+            <img id="imageParfum" style="width: 30vw; height: 41vw;" src="../Fotos/parfum.png" alt="">
+        </div>
+
+        <div id="divBox_Image">
+        </div>
+
+        <div id="homepage_main_buttons">
+          <button onclick="buttonpressed('prev')" id="button_prev" class="cssbuttons-io-button">
+            Back
+            <div class="icon">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                style="transform: rotate(180deg);" 
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+        </button>
+        
+
+            <button onclick="buttonpressed('next')" id="button_next" class="cssbuttons-io-button">
+                Continue
+                <div class="icon">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+        </div>
+
+        <div id="homepage_main_part1">
+            <div id="part1">
+              <h3>Choose your Basenote:</h3>
+              <div  class="options">
+                <p>Vanille</p>
+                <p>Birkenrinde</p>
+                <p>Weihrauch</p>
+              </div>
+
+              <div class="options">
+                <div onclick="updateColor1(1)" class="circle" id="colorVanille"></div>
+                <div onclick="updateColor1(2)" class="circle" id="colorBirke"></div>
+                <div onclick="updateColor1(3)" class="circle" id="colorWeih"></div>
+              </div>
+              
+            </div>
+        </div>
+
+        <div id="homepage_main_part2">
+        </div>    
+        
+        <div id="homepage_main_part3">
+        </div>
+
+        <div id="homepage_main_part4">
+        </div>
+
+        <div id="homepage_main_finish"></div>
+    </main>
+
+    <section id="startpage">
+      <div>
+        <h1 style="display: flex; justify-content: center; margin-top: 5vw;">Create your own Parfum</h1>
+      </div>
+
+      <div id="startpage_div">
+        <img id="startpage_image" src="../3.png" alt="">
+      </div>
+
+      <div id="box">
+        <button onclick="getStarted()" id="homepage_getStarted">
+          Get Started
+        </button>
+      </div>
+    </section>
+
+    <section id="end">
+    </section>
+</body>
+</html>
